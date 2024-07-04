@@ -5,13 +5,31 @@
 {% block content %}
 <div class="container">
     <div class="jumbotron">
-        <h1>Hello!</h1>
+        <b>输入课程 ID，读取课程信息</b>
+        <hr>
         <form method="post">
             <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" name="name">
+                <input type="hidden" name="form1">
+                <label for="lecture_id">课程id:</label>
+                <input required type="number" class="form-control" name="lecture_id">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">提交</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="jumbotron">
+        <b>输入视频 ID ，读取视频信息</b>
+        <hr>
+        <form method="post">
+            <div class="form-group">
+                <input type="hidden" name="form2">
+                <label for="video_id">视频id:</label>
+                <input required type="number" class="form-control" name="video_id">
+            </div>
+            <button type="submit" class="btn btn-primary">提交</button>
         </form>
     </div>
 </div>
